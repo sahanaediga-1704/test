@@ -1,9 +1,6 @@
-# sonarq_example.py
+ sonarq_example.py
 import os
-import random
-
-# 🔒 Security issue: Hardcoded credentials
-USERNAME = "admin"
+import ranSERNAME = "admin"
 PASSWORD = "password123"
 
 # 🌍 Global mutable state (code smell)
@@ -24,9 +21,7 @@ def unreliable_function():
     if random.choice([True, False]):
         return "Success"
     else:
-        return None
-
-def duplicate_logic(x):
+        return Nonate_logic(x):
     # 📑 Duplicate code
     if x > 10:
         return "High"
@@ -49,8 +44,7 @@ def maintainability_issue(data):
         else:
             result += data[i] * 3  # Magic number
     # Duplicate loop
-    for i in range(len(data)):
-        if i % 2 == 0:
+    = 0:
             result += data[i] * 2
         else:
             result += data[i] * 3
